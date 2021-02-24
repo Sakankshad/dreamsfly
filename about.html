@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Academy - Education Course Template</title>
+      <link rel="icon" href="img/core-img/logo2.png">
+      <link rel="stylesheet" href="style.css">
+      <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+      <script src="https://kit.fontawesome.com/a146803837.js" crossorigin="anonymous"></script>
+
+      <style type="text/css">
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+         .team{padding-bottom:70px;font-family:'Poppins', sans-serif}
+         .team .section-title{text-align:left;margin-bottom:50px}
+         .team__item{height:480px;position:relative;z-index:1;margin-bottom:30px;overflow:hidden;background-position:center;background-size:cover}
+         .team__item:after{position:absolute;left:0;top:0;height:100%;width:100%;background:rgba(34,48,96,0.8);content:"";z-index:-1;opacity:0;-webkit-transition:all,0.5s,ease-out,.5s;-o-transition:all,0.5s,ease-out,.5s;transition:all,0.5s,ease-out,.5s}
+         .team__item:hover:after{opacity:1}
+         .team__item:hover .team__text{top:0}
+         .team__item:hover .team__text .team__title{border-bottom:1px solid rgba(183,183,183,0.2);padding:0 0 26px;margin-bottom:26px;opacity:0;visibility:hidden;position:relative;bottom:initial;opacity:1;visibility:visible}
+         .team__item:hover .team__text p{top:0;opacity:1;visibility:visible;-webkit-transition:all .5s ease .3s;-o-transition:all .5s ease .3s;transition:all .5s ease .3s}
+         .team__item:hover .team__text .team__social{opacity:1;visibility:visible;bottom:34px;-webkit-transition:all .5s ease .5s;-o-transition:all .5s ease .5s;transition:all .5s ease .5s}
+         .team__text{height:100%;top:361px;position:relative;padding:35px 30px 30px;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}
+         .team__text .team__title{border-bottom:1px solid rgba(183,183,183,0.2);padding:0 0 26px;margin-bottom:26px;position:relative}
+         .team__text .team__title h4{color:#fff;font-weight:700;margin-bottom:6px}
+         .team__text .team__title span{font-size:15px;color:#88C417}
+         .team__text p{color:#e4e4e4;line-height:26px;opacity:0;visibility:hidden;position:relative;top:50px;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+         .team__text .team__social{position:absolute;left:0;width:100%;padding:0 30px;bottom:0;opacity:0;visibility:hidden}
+         .team__text .team__social a{display:inline-block;font-size:20px;color:#fff;margin-right:34px;-webkit-transition:all,.3s;-o-transition:all,.3s;transition:all,.3s}
+         .team__text .team__social a:last-child{margin-right:0}
+         .team__text .team__social a:hover{color:#88C417}
+         @media(max-width:768px) {
+           .team__item{height:350px}
+           .team__text{padding:25px 20px 20px}
+         }
+      </style>
+   </head>
+   <body>
+      <div id="preloader">
+         <i class="circle-preloader"></i>
+      </div>
+      <header class="header-area">
+         <div class="top-header">
+            <div class="container h-100">
+               <div class="row h-100">
+                  <div class="col-12 h-100">
+                     <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo" style="margin: auto;">
+                           <a href="index.html"><img src="img/core-img/logo.png" style="height: 80px" alt=""></a>
+                        </div>
+                        <!-- <div class="login-content">
+                           <a href="#">Register / Login</a>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="academy-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+               <div class="container">
+                  <nav class="classy-navbar justify-content-between" id="academyNav">
+                     <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                     </div>
+                     <div class="classy-menu">
+                        <div class="classycloseIcon">
+                           <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                           <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <!-- <li>
+                                 <a href="#">Countries</a>
+                                 <ul class="dropdown">
+                                    <li><a href="index.html">Ukraine</a></li>
+                                    <li><a href="about-us.html">Armenia</a></li>
+                                 </ul>
+                              </li> -->
+                              <li>
+                                 <a href="#">Colleges</a>
+                                 <div class="megamenu row" >
+                                    <ul class="single-mega col-lg-6">
+                                       <li class="country">Ukraine</li>
+                                       <li><a href="v-n-karazin.html">1. V.N. Karazin</a></li>
+                                       <li><a href="kharkiv-national-medical-university.html">2. Kharkiv National Medical University</a></li>
+                                       <li><a href="#">3. Poltava State medical University</a></li>
+                                       <li><a href="kyiv-medical-university.html">4. Kyiv Medical University</a></li>
+                                       <li><a href="bogomolets-national-medical-university.html">5. Bogomolets state medical University</a></li>
+                                       <li><a href="#">6. Ivano frankivsk national medical University</a></li>
+                                       <li><a href="lviv-national-medical-university.html">7. Lviv state medical University</a></li>
+                                       <li><a href="#">8. Vinnitsa National Medical University</a></li>
+                                       <li><a href="#">9. Dnipropetrovsk medical University</a></li>
+                                    </ul>
+                                    <ul class="single-mega col-lg-6">
+                                       <li class="country">Armenia</li>
+                                       <li><a href="#">1. St. Theresa Medical University Yerevan</a></li>
+                                       <li><a href="#">2. Mkitar gosh Armenian University</a></li>
+                                       <li><a href="#">3. Yerevan haybusak University Armenia</a></li>
+                                    </ul>
+                                    <!-- <div class="single-mega cn-col-4">
+                                       <img src="img/bg-img/bg-1.jpg" alt="">
+                                    </div> -->
+                                 </div>
+                              </li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="gallery.html">Gallery</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="calling-info">
+                        <div class="call-center">
+                           <a href="tel:18005728065"><i class="fas fa-phone-alt"></i> <span>1800 572 8065</span></a>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="contact-section">
+         <!-- <div class="container"> -->
+            <div style="padding-bottom: 175px ;padding-top: 225px; background-image: url(img/aircraft-on-the-cloudy-sky.jpg); background-position: top center; background-size: cover;" >
+               <h1 style="text-align: center; margin: 0 auto; font-family: inherit !important; font-weight: bolder; padding: 10px; border-radius: 5px; background: #7ebb42; color: #fff; width: fit-content; display: flex; box-shadow: 0 8px 6px -6px black;">ABOUT US</h1>
+            </div>
+            <div class="row" style="margin: 0 !important">
+               <div class="col-lg-6" style="padding: 75px 15px; background: #61ba6d; background: -webkit-linear-gradient(to right, #61ba6d, #83c331); background: linear-gradient(to right, #61ba6d, #83c331);">
+                  <h2 style="color: #fff">Let Your Dreams Fly</h2>
+                  <br> 
+                  <p style="color: #fff">
+                     &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     <br> 
+                     <br>
+                     &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+               </div>
+               <div class="col-lg-6 col-lg-img" style="padding: 0 !important; background-image: url(img/about-us.jpeg);background-position: top right; background-size: cover;">
+               </div>
+            </div>
+         <!-- </div> -->
+      </section>
+
+      <section id="counter-stats" style="background: #fff !important" class="wow fadeInRight college-counter" data-wow-duration="1.4s">
+        <div class="container" style="color: #77bd44 !important">
+          <div class="row">
+
+            <div class="col-lg-3 stats" aria-hidden="true">
+              <i class="fas fa-calendar-alt"></i>
+              <div class="counting counter-number-1" data-count="4">0</div>
+              <h5>Years of Experience</h5>
+            </div>
+
+            <div class="col-lg-3 stats">
+              <i class="fas fa-user-graduate" aria-hidden="true"></i>
+              <div class="counting counter-number-1" data-count="500">0</div>
+              <h5>Successful Students</h5>
+            </div>
+
+            <div class="col-lg-3 stats">
+              <i class="fas fa-globe-americas" aria-hidden="true"></i>
+              <div class="counting counter-number-1" data-count="3">0</div>
+              <h5>Countries</h5>
+            </div>
+
+            <div class="col-lg-3 stats">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <div class="counting counter-number-2" data-count="100">0</div>
+              <h5>Customer Satisfaction</h5>
+            </div>
+
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+
+      </section>
+
+      <div class="section-padding-100 bg-img bg-overlay choose-us-section" style="background-image: url(img/bg-img/bg-2.jpg);">
+         <div class="container">
+            <h2 class="icon-grad" style="text-align: center; padding-bottom: 75px; font-family: inherit !important; font-weight: bolder;">How We Can Help?</h2>
+            <div class="row">
+               <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-course-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
+                     <div class="course-icon icon-grad-1">
+                        <i class="fa fa-clock-o icon-grad"></i>
+                     </div>
+                     <div class="course-content">
+                        <h4>Speedy Admissions</h4>
+                        <p>We have a very fluent admission process</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-course-area d-flex align-items-center wow fadeInUp" data-wow-delay="400ms">
+                     <div class="course-icon icon-grad-1">
+                        <!-- <i class="icon-worldwide"></i> -->
+                        <i class="far fa-comments icon-grad"></i>
+                     </div>
+                     <div class="course-content">
+                        <h4>Excellent Counselling</h4>
+                        <p>Guiding you through every small step</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-course-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+                     <div class="course-icon icon-grad-1">
+                        <!-- <i class="icon-map"></i> -->
+                        <i class="fas fa-rupee-sign icon-grad"></i>
+                     </div>
+                     <div class="course-content">
+                        <h4>Affordable Budget</h4>
+                        <p>We counsel you according to your budget</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container section-padding-100">
+         <h2 class="icon-grad" style="text-align: center; padding-bottom: 75px; font-family: inherit !important; font-weight: bolder;">Meet the Leaders</h2>
+        <div class="row">
+          <!-- Single Starts  -->
+            <div class="col-lg-4 col-md-6">
+            <div class="team__item set-bg" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');">
+              <div class="team__text">
+                <div class="team__title">
+                  <h4>Furkan Giray</h4>
+                  <span>Web Developer</span>
+                </div>
+                <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                  porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
+                  ultricies nisl sit amet.</p>
+                <div class="team__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Ends    -->
+          <div class="col-lg-4 col-md-6">
+            <div class="team__item set-bg" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');">
+              <div class="team__text">
+                <div class="team__title">
+                  <h4>Furkan Giray</h4>
+                  <span>Web Developer</span>
+                </div>
+                <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                  porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
+                  ultricies nisl sit amet.</p>
+                <div class="team__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team__item set-bg" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');">
+              <div class="team__text">
+                <div class="team__title">
+                  <h4>Furkan Giray</h4>
+                  <span>Web Developer</span>
+                </div>
+                <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
+                  porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
+                  ultricies nisl sit amet.</p>
+                <div class="team__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="call-to-action-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="cta-content d-flex align-items-center justify-content-between flex-wrap">
+                     <h3>Do you want to enrole yourself? Get in touch!</h3>
+                     <!-- <a href="#" class="btn academy-btn">Enquire Now</a> -->
+                     <button class="btn btn-info btn-lg turned-button academy-btn" type="button" data-toggle="modal" data-target="#myModal">Enquire Now &#8594;</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer-area">
+         <div class="main-footer-area section-padding-100-0">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-3">
+                     <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                           <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        
+                        <div class="footer-social-info">
+                           <a href="#"><i class="fa fa-facebook"></i></a>
+                           <a href="#"><i class="fa fa-twitter"></i></a>
+                           <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                     <div class="footer-widget mb-100">
+                        <p style="color: #fff">Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                     <div class="footer-widget mb-100">
+                        <nav>
+                           <ul class="useful-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="gallery.html">Gallery</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                     <div class="footer-widget mb-100">
+                        <p style="color: #fff">
+                           <span style="padding-right: 10px;"><i class="fas fa-building"></i></span>
+                           3rdFloor, Matwar MarketAshiana More,Patna State-Bihar ,PIN–800014.
+                        </p>
+                        <p style="color: #fff">
+                           <span style="padding-right: 10px;"><i class="fas fa-phone-alt"></i></span>
+                           <span style="font-weight: bold;"></span> 
+                           <a style="color: #fff" href="tel:+917042347232">
+                              +91 704 234 7232
+                           </a>
+                           ,
+                           <a style="color: #fff" href="tel:+917258888700">
+                              +91 725 888 8700
+                           </a>
+                           ,
+                           <a style="color: #fff" href="tel:+919801705233">
+                              +91 980 170 5233
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottom-footer-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <p>
+                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | Designed & Developed by <a href="https://loons.co.in/" ><span style="font-family: hobo; color: #00abb6">Lo<span style="color: #f8951d">O</span>ns</span></a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <section>
+        <div class="container">
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div>
+                          <h4 style="text-align: center; margin-top: 10px;">
+                            Enquiry Form
+                          </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form" >
+                                <p style="margin-bottom: 10px; padding: 0 15px;"> Send your message in the form below and we will get back to you as early as possible. </p>
+                                <div class="row" style="margin: 0 !important">
+                                  <div class="form-group col-lg-6">
+                                      <label for="name"> Name:</label>
+                                      <input type="text" class="form-control" id="name" name="Name" required maxlength="50">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label for="name"> Number:</label>
+                                      <input type="number" class="form-control" id="name" name="Number" required maxlength="50">
+                                  </div>
+                                  <div class="form-group col-lg-12">
+                                      <label for="name"> Interested In:</label>
+                                      <div class="row" style="margin: 0 !important">
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Deep Cleaning" value="Yes">
+                                          <label>V.N. Karazin</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Simple cleaning" value="Yes">
+                                          <label>Kharkiv National Medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Dusting" value="Yes">
+                                          <label>Poltava State medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Floor Scrubbing" value="Yes">
+                                          <label>Kyiv Medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Floor Polishing" value="Yes">
+                                          <label>Bogomolets state medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Sanitation" value="Yes">
+                                          <label>Ivano frankivsk national medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Housekeeping" value="Yes">
+                                          <label>Lviv state medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Facility Management" value="Yes">
+                                          <label>Vinnitsa National Medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Manpower Services" value="Yes">
+                                          <label>Dnipropetrovsk medical University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Carpet Cleaning" value="Yes">
+                                          <label>St. Theresa Medical University Yerevan</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="Marble Polishing" value="Yes">
+                                          <label>Mkitar gosh Armenian University</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <input type="checkbox" name="External Glass Cleaning" value="Yes">
+                                          <label>Yerevan haybusak University Armenia</label>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group col-lg-12">
+                                      <label for="name"> Message:</label>
+                                      <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <script src="js/jquery/jquery-2.2.4.min.js"></script>
+      <script src="js/bootstrap/popper.min.js"></script>
+      <script src="js/bootstrap/bootstrap.min.js"></script>
+      <script src="js/plugins/plugins.js"></script>
+      <script src="js/active.js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+      <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'UA-23581568-13');
+      </script>
+      <script type="text/javascript">
+         // number count for stats, using jQuery animate
+
+         $('.counting').each(function() {
+           var $this = $(this),
+               countTo = $this.attr('data-count');
+           
+           $({ countNum: $this.text()}).animate({
+             countNum: countTo
+           },
+
+           {
+
+             duration: 3000,
+             easing:'linear',
+             step: function() {
+               $this.text(Math.floor(this.countNum));
+             },
+             complete: function() {
+               $this.text(this.countNum);
+               //alert('finished');
+             }
+
+           });  
+           
+
+         });
+      </script>
+      <script type="js/form.js"></script>
+   </body>
+</html>
