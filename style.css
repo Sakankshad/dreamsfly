@@ -836,7 +836,7 @@ img {
 .main-footer-area {
   background-color: #232323; }
   .main-footer-area .footer-widget .widget-title {
-    margin-bottom: 45px; }
+    margin-bottom: 25px; }
     .main-footer-area .footer-widget .widget-title h6 {
       font-size: 14px;
       font-weight: 500;
@@ -1520,4 +1520,18 @@ img {
     right: 30px;
     bottom: 30px
   }
+}
+
+.form-group label {
+  display: contents !important;
+}
+
+.Phone a:hover {
+  color: #7bba43 !important;
+}
+
+.country-name {
+  text-align: center;
+  padding-top: 15px;
+  color: #000;
 }
