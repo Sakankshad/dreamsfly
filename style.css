@@ -13,7 +13,7 @@
 
 @font-face {
           font-family: hobo;
-          src: url(fonts/hobostd.otf);
+          src: url(fonts/HoboStd.otf);
         }
 
 * {
@@ -35,7 +35,7 @@ h6 {
   font-weight: 700; }
 
 p {
-  color: #606060;
+  color: #8d8d8d;
   font-size: 14px;
   line-height: 2;
   font-weight: 500; }
@@ -264,15 +264,15 @@ img {
   background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
   background: linear-gradient(to right, #61ba6d, #83c331);
   border-radius: 0;
-  bottom: 60px;
+  bottom: 30px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-size: 24px;
-  height: 40px;
+  height: 50px;
   line-height: 40px;
-  right: 60px;
+  left: 30px;
   text-align: center;
-  width: 40px;
+  width: 50px;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   #scrollUp:hover {
@@ -280,7 +280,11 @@ img {
   @media only screen and (max-width: 767px) {
     #scrollUp {
       bottom: 30px;
-      right: 30px; } }
+      left: 30px; } }
+
+  #scrollUp i {
+    line-height: 50px !important;
+  }
 
 /* Essence Button */
 .academy-btn {
@@ -1435,4 +1439,85 @@ img {
 
 .gallery-img {
   padding: 0 !important
+}
+
+@media(max-width: 1002px) {
+  .megamenu li a {
+    height: auto !important;
+  }
+}
+
+.country a img {
+  height: 30px;
+  margin-right: 5px;
+  filter: drop-shadow(-4px 4px 2px rgba(0, 0, 0, 0.2));
+}
+
+.country-section a {
+  text-align: left !important;
+  text-transform: uppercase;
+}
+
+.row .col-lg-6 h2 {
+  text-transform: uppercase !important;
+}
+
+.col-lg-spl {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%
+  }
+
+@media (min-width:992px) {
+  .col-lg-spl {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%
+  }
+}
+
+@media (max-width: 992px) {
+
+  .col-lg-spl img {
+    height: 90px !important;
+    width: auto !important;
+    margin: auto;
+    display: flex;
+  }
+
+}
+
+.country-section a {
+  color: #fff !important;
+}
+
+.country-section a:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(-6px 6px 3px rgba(0, 0, 0, 0.3));
+}
+
+.partners-logo img {
+  filter: drop-shadow(-6px 6px 3px rgba(0, 0, 0, 0.2));
+  border: 0.5px solid #000;
+  transition: 280ms ease-out;
+}
+
+.partners-logo img:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(-9px 9px 3px rgba(0, 0, 0, 0.3));
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    filter: drop-shadow( 0 2px 6px rgba(0, 0, 0, 0.3));
+}
+
+@media (min-width: 576px) {
+  .whatsapp{
+    right: 30px;
+    bottom: 30px
+  }
 }
