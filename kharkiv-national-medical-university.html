@@ -353,7 +353,7 @@
                <div class="row">
                   <div class="col-12">
                      <p>
-                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | Designed & Developed by <a href="https://loons.co.in/" target="_blank"><span style="font-family: hobo; color: #00abb6">Lo<span style="color: #f8951d">O</span>ns</span></a>
+                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved by Dreamsfly Overseas Education Pvt. Ltd. | Designed & Developed by <a href="https://loons.co.in/" target="_blank"><span style="font-family: hobo; color: #00abb6">Lo<span style="color: #f8951d">O</span>ns</span></a>
                      </p>
                   </div>
                </div>
@@ -463,6 +463,34 @@
            gtag('js', new Date());
          
            gtag('config', 'UA-23581568-13');
+      </script>
+      <script type="text/javascript">
+         // number count for stats, using jQuery animate
+
+         $('.counting').each(function() {
+           var $this = $(this),
+               countTo = $this.attr('data-count');
+           
+           $({ countNum: $this.text()}).animate({
+             countNum: countTo
+           },
+
+           {
+
+             duration: 3000,
+             easing:'linear',
+             step: function() {
+               $this.text(Math.floor(this.countNum));
+             },
+             complete: function() {
+               $this.text(this.countNum);
+               //alert('finished');
+             }
+
+           });  
+           
+
+         });
       </script>
       <script type="js/form.js"></script>
       <script type="text/javascript" src="js/formData.js"></script>
