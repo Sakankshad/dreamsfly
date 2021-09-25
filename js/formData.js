@@ -22,7 +22,7 @@ $( document ).ready(function( $ ) {
 	
 		// fire off the request to /form.php
 		request = $.ajax({
-			url: "https://script.google.com/macros/s/AKfycbz2xGKw-e_U_QgV20uN_9QYnN3qUEjZUEdRCHimDTEHaJ6pDp4A5PQxtFmHS7VCFtprig/exec",
+			url: "https://script.google.com/macros/s/AKfycbxKCng7m-K9Mlm0dOaoX4pz8CeqkMOHHk5GtmfCEdWgAXNFjkZGFichiVtikxotKDD1/exec",
 			type: "get",
 			data: serializedData
 		});
